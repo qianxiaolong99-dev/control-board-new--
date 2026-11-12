@@ -1,0 +1,111 @@
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第498行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第499行	implicit signed to unsigned conversion
+Warning[359]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第525行	illegal conversion between pointer types
+pointer to const unsigned char -> pointer to unsigned char
+Warning[359]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第527行	illegal conversion between pointer types
+pointer to volatile unsigned char -> pointer to const unsigned char
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第745行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第759行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第769行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第786行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第797行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第19行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第20行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第36行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第37行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第68行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommSend.c	第69行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第119行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第123行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第127行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第131行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第141行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第145行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第149行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommRecv.c	第153行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第143行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第177行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第390行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第412行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第414行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第415行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第416行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第440行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第461行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第464行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第465行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第466行	implicit signed to unsigned conversion
+Warning[359]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第478行	illegal conversion between pointer types
+pointer to volatile enum -> pointer to enum
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第513行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.c	第525行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第110行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第301行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第302行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第304行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第305行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第307行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第308行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第313行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第314行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第316行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第317行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第319行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第320行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第333行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第334行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第336行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第337行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第339行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第340行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第345行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第346行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第348行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第349行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第351行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第352行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第370行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第423行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第433行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第469行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第501行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第502行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第504行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第505行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第507行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第508行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第513行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第514行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第516行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第517行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第519行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第520行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第527行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第528行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第530行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第531行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第533行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第534行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第539行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第540行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第542行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第543行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第545行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第546行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\PotProc.c	第7行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\PotProc.c	第21行	implicit signed to unsigned conversion
+Warning[373]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\PotProc.c	第163行	implicit signed to unsigned conversion
+Advisory[1510]	non-reentrant function "_vClearDecodingParam" appears in multiple call graphs and has been duplicated by the compiler
+Advisory[1510]	non-reentrant function "_memset" appears in multiple call graphs and has been duplicated by the compiler
+Warning[520]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.c	第155行	function "_vEnablePWM2" is never called
+Warning[1090]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\PotProc.h	第31行	variable "_c_cUart1SendBuf" is not used
+Warning[1393]:	C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.c	第589行	possible hardware stack overflow detected; estimated stack depth: 10
+
+Memory Summary:
+    Program space        used  1BFCh (  7164) of  2000h words   ( 87.5%)
+    Data space           used    D7h (   215) of    F0h bytes   ( 89.6%)
+    EEPROM space         None available
+    Data stack space     used     0h (     0) of    22h bytes   (  0.0%)
+    Configuration bits   used     0h (     0) of     2h words   (  0.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+

@@ -1,0 +1,1361 @@
+
+# 1 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\IHProc.c"
+
+# 26 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\htc.h"
+extern const char __xc8_OPTIM_SPEED;
+
+extern double __fpnormalize(double);
+
+
+# 13 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\xc8debug.h"
+#pragma intrinsic(__builtin_software_breakpoint)
+extern void __builtin_software_breakpoint(void);
+
+# 14 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\cms79ft738.h"
+volatile unsigned char INDF @ 0x0000;
+volatile unsigned char TMR0 @ 0x0001;
+volatile unsigned char PCL @ 0x0002;
+volatile unsigned char STATUS @ 0x0003;
+volatile unsigned char FSR @ 0x0004;
+volatile unsigned char PORTA @ 0x0005;
+volatile unsigned char PORTB @ 0x0006;
+volatile unsigned char PORTC @ 0x0007;
+volatile unsigned char PORTD @ 0x0008;
+volatile unsigned char ANSEL0 @ 0x0009;
+volatile unsigned char PCLATH @ 0x000A;
+volatile unsigned char INTCON @ 0x000B;
+volatile unsigned char PIR1 @ 0x000C;
+volatile unsigned char PIR2 @ 0x000D;
+volatile unsigned char TMR1L @ 0x000E;
+volatile unsigned char TMR1H @ 0x000F;
+volatile unsigned char T1CON @ 0x0010;
+volatile unsigned char TMR2 @ 0x0011;
+volatile unsigned char T2CON @ 0x0012;
+volatile unsigned char SSPBUF @ 0x0013;
+volatile unsigned char SSPCON @ 0x0014;
+volatile unsigned char CCPR1L @ 0x0015;
+volatile unsigned char CCPR1H @ 0x0016;
+volatile unsigned char CCP1CON @ 0x0017;
+volatile unsigned char RCSTA0 @ 0x0018;
+volatile unsigned char TXREG0 @ 0x0019;
+volatile unsigned char RCREG0 @ 0x001A;
+volatile unsigned char CCPR2L @ 0x001B;
+volatile unsigned char CCPR2H @ 0x001C;
+volatile unsigned char CCP2CON @ 0x001D;
+volatile unsigned char TXSTA0 @ 0x001E;
+volatile unsigned char SPBRG0 @ 0x001F;
+volatile unsigned char OPTION_REG @ 0x0081;
+volatile unsigned char TRISA @ 0x0085;
+volatile unsigned char TRISB @ 0x0086;
+volatile unsigned char TRISC @ 0x0087;
+volatile unsigned char TRISD @ 0x0088;
+volatile unsigned char ANSEL1 @ 0x0089;
+volatile unsigned char PIE1 @ 0x008C;
+volatile unsigned char PIE2 @ 0x008D;
+volatile unsigned char WPUD @ 0x008E;
+volatile unsigned char OSCCON @ 0x008F;
+volatile unsigned char WDTCON @ 0x0090;
+volatile unsigned char SSPCON2 @ 0x0091;
+volatile unsigned char PR2 @ 0x0092;
+volatile unsigned char SSPADD @ 0x0093;
+volatile unsigned char SSPMSK @ 0x0093;
+volatile unsigned char SSPSTAT @ 0x0094;
+volatile unsigned char WPUB @ 0x0095;
+volatile unsigned char IOCB @ 0x0096;
+volatile unsigned char WPDB @ 0x0097;
+volatile unsigned char SPBRG1 @ 0x0098;
+volatile unsigned char PWMCON @ 0x0099;
+volatile unsigned char PWM1CYC @ 0x009A;
+volatile unsigned char PWM2CYC @ 0x009B;
+volatile unsigned char ADRESL @ 0x009C;
+volatile unsigned char ADRESH @ 0x009D;
+volatile unsigned char ADCON0 @ 0x009E;
+volatile unsigned char ADCON1 @ 0x009F;
+volatile unsigned char RCSTA1 @ 0x0105;
+volatile unsigned char WPUA @ 0x0107;
+volatile unsigned char WPUC @ 0x0108;
+volatile unsigned char ANSEL2 @ 0x0109;
+volatile unsigned char EEDAT @ 0x010C;
+volatile unsigned char EEADR @ 0x010D;
+volatile unsigned char EEDATH @ 0x010E;
+volatile unsigned char EEADRH @ 0x010F;
+volatile unsigned char TABLE_SPH @ 0x0110;
+volatile unsigned char TABLE_SPL @ 0x0111;
+volatile unsigned char TABLE_DATAH @ 0x0112;
+volatile unsigned char LEDCON0 @ 0x0113;
+volatile unsigned char LEDCON1 @ 0x0114;
+volatile unsigned char LEDADD @ 0x0115;
+volatile unsigned char LEDDATA @ 0x0116;
+volatile unsigned char SEGEN2 @ 0x0117;
+volatile unsigned char SEGEN1 @ 0x0118;
+volatile unsigned char SEGEN0 @ 0x0119;
+volatile unsigned char COMEN @ 0x011A;
+volatile unsigned char EECON1 @ 0x011B;
+volatile unsigned char EECON2 @ 0x011C;
+volatile unsigned char TXREG1 @ 0x011D;
+volatile unsigned char RCREG1 @ 0x011E;
+volatile unsigned char TXSTA1 @ 0x011F;
+volatile unsigned char LVDCON @ 0x0185;
+volatile unsigned char DIVS1 @ 0x0187;
+volatile unsigned char DIVS0 @ 0x0188;
+volatile unsigned char DIVCON @ 0x0189;
+volatile unsigned char DIVE3 @ 0x018C;
+volatile unsigned char DIVE2 @ 0x018D;
+volatile unsigned char DIVE1 @ 0x018E;
+volatile unsigned char DIVE0 @ 0x018F;
+volatile unsigned char DIVQ3 @ 0x018C;
+volatile unsigned char DIVQ2 @ 0x018D;
+volatile unsigned char DIVQ1 @ 0x018E;
+volatile unsigned char DIVQ0 @ 0x018F;
+
+
+
+
+volatile bit IRP @ ((unsigned)&STATUS*8)+7;
+volatile bit RP1 @ ((unsigned)&STATUS*8)+6;
+volatile bit RP0 @ ((unsigned)&STATUS*8)+5;
+volatile bit TO @ ((unsigned)&STATUS*8)+4;
+volatile bit PD @ ((unsigned)&STATUS*8)+3;
+volatile bit Z @ ((unsigned)&STATUS*8)+2;
+volatile bit DC @ ((unsigned)&STATUS*8)+1;
+volatile bit C @ ((unsigned)&STATUS*8)+0;
+
+
+
+volatile bit RA7 @ ((unsigned)&PORTA*8)+7;
+volatile bit RA6 @ ((unsigned)&PORTA*8)+6;
+volatile bit RA5 @ ((unsigned)&PORTA*8)+5;
+volatile bit RA4 @ ((unsigned)&PORTA*8)+4;
+volatile bit RA3 @ ((unsigned)&PORTA*8)+3;
+volatile bit RA2 @ ((unsigned)&PORTA*8)+2;
+volatile bit RA1 @ ((unsigned)&PORTA*8)+1;
+volatile bit RA0 @ ((unsigned)&PORTA*8)+0;
+
+
+
+volatile bit RB6 @ ((unsigned)&PORTB*8)+6;
+volatile bit RB5 @ ((unsigned)&PORTB*8)+5;
+volatile bit RB4 @ ((unsigned)&PORTB*8)+4;
+volatile bit RB3 @ ((unsigned)&PORTB*8)+3;
+volatile bit RB2 @ ((unsigned)&PORTB*8)+2;
+volatile bit RB1 @ ((unsigned)&PORTB*8)+1;
+volatile bit RB0 @ ((unsigned)&PORTB*8)+0;
+
+
+
+volatile bit RC7 @ ((unsigned)&PORTC*8)+7;
+volatile bit RC6 @ ((unsigned)&PORTC*8)+6;
+volatile bit RC5 @ ((unsigned)&PORTC*8)+5;
+volatile bit RC4 @ ((unsigned)&PORTC*8)+4;
+volatile bit RC3 @ ((unsigned)&PORTC*8)+3;
+volatile bit RC2 @ ((unsigned)&PORTC*8)+2;
+volatile bit RC1 @ ((unsigned)&PORTC*8)+1;
+volatile bit RC0 @ ((unsigned)&PORTC*8)+0;
+
+
+
+volatile bit RD2 @ ((unsigned)&PORTD*8)+2;
+volatile bit RD1 @ ((unsigned)&PORTD*8)+1;
+volatile bit RD0 @ ((unsigned)&PORTD*8)+0;
+
+
+
+volatile bit GIE @ ((unsigned)&INTCON*8)+7;
+volatile bit PEIE @ ((unsigned)&INTCON*8)+6;
+volatile bit T0IE @ ((unsigned)&INTCON*8)+5;
+volatile bit INTE @ ((unsigned)&INTCON*8)+4;
+volatile bit RBIE @ ((unsigned)&INTCON*8)+3;
+volatile bit T0IF @ ((unsigned)&INTCON*8)+2;
+volatile bit INTF @ ((unsigned)&INTCON*8)+1;
+volatile bit RBIF @ ((unsigned)&INTCON*8)+0;
+
+
+
+volatile bit ADIF @ ((unsigned)&PIR1*8)+6;
+volatile bit RC0IF @ ((unsigned)&PIR1*8)+5;
+volatile bit TX0IF @ ((unsigned)&PIR1*8)+4;
+volatile bit SSPIF @ ((unsigned)&PIR1*8)+3;
+volatile bit CCP1IF @ ((unsigned)&PIR1*8)+2;
+volatile bit TMR2IF @ ((unsigned)&PIR1*8)+1;
+volatile bit TMR1IF @ ((unsigned)&PIR1*8)+0;
+
+
+
+volatile bit LVDIF @ ((unsigned)&PIR2*8)+7;
+volatile bit EEIF @ ((unsigned)&PIR2*8)+4;
+volatile bit BCLIF @ ((unsigned)&PIR2*8)+3;
+volatile bit TX1IF @ ((unsigned)&PIR2*8)+2;
+volatile bit RC1IF @ ((unsigned)&PIR2*8)+1;
+volatile bit CCP2IF @ ((unsigned)&PIR2*8)+0;
+
+
+
+volatile bit T1GINV @ ((unsigned)&T1CON*8)+7;
+volatile bit TMR1GE @ ((unsigned)&T1CON*8)+6;
+volatile bit T1CKPS1 @ ((unsigned)&T1CON*8)+5;
+volatile bit T1CKPS0 @ ((unsigned)&T1CON*8)+4;
+volatile bit T1OSCEN @ ((unsigned)&T1CON*8)+3;
+volatile bit T1SYNC @ ((unsigned)&T1CON*8)+2;
+volatile bit TMR1CS @ ((unsigned)&T1CON*8)+1;
+volatile bit TMR1ON @ ((unsigned)&T1CON*8)+0;
+
+
+
+volatile bit TOUTPS3 @ ((unsigned)&T2CON*8)+6;
+volatile bit TOUTPS2 @ ((unsigned)&T2CON*8)+5;
+volatile bit TOUTPS1 @ ((unsigned)&T2CON*8)+4;
+volatile bit TOUTPS0 @ ((unsigned)&T2CON*8)+3;
+volatile bit TMR2ON @ ((unsigned)&T2CON*8)+2;
+volatile bit T2CKPS1 @ ((unsigned)&T2CON*8)+1;
+volatile bit T2CKPS0 @ ((unsigned)&T2CON*8)+0;
+
+
+
+volatile bit WCOL @ ((unsigned)&SSPCON*8)+7;
+volatile bit SSPOV @ ((unsigned)&SSPCON*8)+6;
+volatile bit SSPEN @ ((unsigned)&SSPCON*8)+5;
+volatile bit CKP @ ((unsigned)&SSPCON*8)+4;
+volatile bit SSPM3 @ ((unsigned)&SSPCON*8)+3;
+volatile bit SSPM2 @ ((unsigned)&SSPCON*8)+2;
+volatile bit SSPM1 @ ((unsigned)&SSPCON*8)+1;
+volatile bit SSPM0 @ ((unsigned)&SSPCON*8)+0;
+
+
+
+volatile bit DC1B1 @ ((unsigned)&CCP1CON*8)+5;
+volatile bit DC1B0 @ ((unsigned)&CCP1CON*8)+4;
+volatile bit CCP1M3 @ ((unsigned)&CCP1CON*8)+3;
+volatile bit CCP1M2 @ ((unsigned)&CCP1CON*8)+2;
+volatile bit CCP1M1 @ ((unsigned)&CCP1CON*8)+1;
+volatile bit CCP1M0 @ ((unsigned)&CCP1CON*8)+0;
+
+
+
+volatile bit SPEN0 @ ((unsigned)&RCSTA0*8)+7;
+volatile bit RX9EN0 @ ((unsigned)&RCSTA0*8)+6;
+volatile bit SREN0 @ ((unsigned)&RCSTA0*8)+5;
+volatile bit CREN0 @ ((unsigned)&RCSTA0*8)+4;
+volatile bit RCIDL0 @ ((unsigned)&RCSTA0*8)+3;
+volatile bit FERR0 @ ((unsigned)&RCSTA0*8)+2;
+volatile bit OERR0 @ ((unsigned)&RCSTA0*8)+1;
+volatile bit RX9D0 @ ((unsigned)&RCSTA0*8)+0;
+
+
+
+volatile bit DC2B1 @ ((unsigned)&CCP2CON*8)+5;
+volatile bit DC2B0 @ ((unsigned)&CCP2CON*8)+4;
+volatile bit CCP2M3 @ ((unsigned)&CCP2CON*8)+3;
+volatile bit CCP2M2 @ ((unsigned)&CCP2CON*8)+2;
+volatile bit CCP2M1 @ ((unsigned)&CCP2CON*8)+1;
+volatile bit CCP2M0 @ ((unsigned)&CCP2CON*8)+0;
+
+
+
+volatile bit CSRC0 @ ((unsigned)&TXSTA0*8)+7;
+volatile bit TX9EN0 @ ((unsigned)&TXSTA0*8)+6;
+volatile bit TXEN0 @ ((unsigned)&TXSTA0*8)+5;
+volatile bit SYNC0 @ ((unsigned)&TXSTA0*8)+4;
+volatile bit SCKP0 @ ((unsigned)&TXSTA0*8)+3;
+volatile bit TRMT0 @ ((unsigned)&TXSTA0*8)+1;
+volatile bit TX9D0 @ ((unsigned)&TXSTA0*8)+0;
+
+
+
+volatile bit BRG07 @ ((unsigned)&SPBRG0*8)+7;
+volatile bit BRG06 @ ((unsigned)&SPBRG0*8)+6;
+volatile bit BRG05 @ ((unsigned)&SPBRG0*8)+5;
+volatile bit BRG04 @ ((unsigned)&SPBRG0*8)+4;
+volatile bit BRG03 @ ((unsigned)&SPBRG0*8)+3;
+volatile bit BRG02 @ ((unsigned)&SPBRG0*8)+2;
+volatile bit BRG01 @ ((unsigned)&SPBRG0*8)+1;
+volatile bit BRG00 @ ((unsigned)&SPBRG0*8)+0;
+
+
+
+volatile bit RBPU @ ((unsigned)&OPTION_REG*8)+7;
+volatile bit INTEDG @ ((unsigned)&OPTION_REG*8)+6;
+volatile bit T0CS @ ((unsigned)&OPTION_REG*8)+5;
+volatile bit T0SE @ ((unsigned)&OPTION_REG*8)+4;
+volatile bit PSA @ ((unsigned)&OPTION_REG*8)+3;
+volatile bit PS2 @ ((unsigned)&OPTION_REG*8)+2;
+volatile bit PS1 @ ((unsigned)&OPTION_REG*8)+1;
+volatile bit PS0 @ ((unsigned)&OPTION_REG*8)+0;
+
+
+
+volatile bit TRISA7 @ ((unsigned)&TRISA*8)+7;
+volatile bit TRISA6 @ ((unsigned)&TRISA*8)+6;
+volatile bit TRISA5 @ ((unsigned)&TRISA*8)+5;
+volatile bit TRISA4 @ ((unsigned)&TRISA*8)+4;
+volatile bit TRISA3 @ ((unsigned)&TRISA*8)+3;
+volatile bit TRISA2 @ ((unsigned)&TRISA*8)+2;
+volatile bit TRISA1 @ ((unsigned)&TRISA*8)+1;
+volatile bit TRISA0 @ ((unsigned)&TRISA*8)+0;
+
+
+
+volatile bit TRISB6 @ ((unsigned)&TRISB*8)+6;
+volatile bit TRISB5 @ ((unsigned)&TRISB*8)+5;
+volatile bit TRISB4 @ ((unsigned)&TRISB*8)+4;
+volatile bit TRISB3 @ ((unsigned)&TRISB*8)+3;
+volatile bit TRISB2 @ ((unsigned)&TRISB*8)+2;
+volatile bit TRISB1 @ ((unsigned)&TRISB*8)+1;
+volatile bit TRISB0 @ ((unsigned)&TRISB*8)+0;
+
+
+
+volatile bit TRISC7 @ ((unsigned)&TRISC*8)+7;
+volatile bit TRISC6 @ ((unsigned)&TRISC*8)+6;
+volatile bit TRISC5 @ ((unsigned)&TRISC*8)+5;
+volatile bit TRISC4 @ ((unsigned)&TRISC*8)+4;
+volatile bit TRISC3 @ ((unsigned)&TRISC*8)+3;
+volatile bit TRISC2 @ ((unsigned)&TRISC*8)+2;
+volatile bit TRISC1 @ ((unsigned)&TRISC*8)+1;
+volatile bit TRISC0 @ ((unsigned)&TRISC*8)+0;
+
+
+
+volatile bit TRISD2 @ ((unsigned)&TRISD*8)+2;
+volatile bit TRISD1 @ ((unsigned)&TRISD*8)+1;
+volatile bit TRISD0 @ ((unsigned)&TRISD*8)+0;
+
+
+
+volatile bit ADIE @ ((unsigned)&PIE1*8)+6;
+volatile bit RC0IE @ ((unsigned)&PIE1*8)+5;
+volatile bit TX0IE @ ((unsigned)&PIE1*8)+4;
+volatile bit SSPIE @ ((unsigned)&PIE1*8)+3;
+volatile bit CCP1IE @ ((unsigned)&PIE1*8)+2;
+volatile bit TMR2IE @ ((unsigned)&PIE1*8)+1;
+volatile bit TMR1IE @ ((unsigned)&PIE1*8)+0;
+
+
+
+volatile bit LVDIE @ ((unsigned)&PIE2*8)+7;
+volatile bit EEIE @ ((unsigned)&PIE2*8)+4;
+volatile bit BCLIE @ ((unsigned)&PIE2*8)+3;
+volatile bit TX1IE @ ((unsigned)&PIE2*8)+2;
+volatile bit RC1IE @ ((unsigned)&PIE2*8)+1;
+volatile bit CCP2IE @ ((unsigned)&PIE2*8)+0;
+
+
+
+volatile bit WPUD2 @ ((unsigned)&WPUD*8)+2;
+volatile bit WPUD1 @ ((unsigned)&WPUD*8)+1;
+volatile bit WPUD0 @ ((unsigned)&WPUD*8)+0;
+
+
+
+volatile bit IRCF2 @ ((unsigned)&OSCCON*8)+6;
+volatile bit IRCF1 @ ((unsigned)&OSCCON*8)+5;
+volatile bit IRCF0 @ ((unsigned)&OSCCON*8)+4;
+volatile bit SCS @ ((unsigned)&OSCCON*8)+0;
+
+
+
+volatile bit SWDTEN @ ((unsigned)&WDTCON*8)+0;
+
+
+
+volatile bit GCEN @ ((unsigned)&SSPCON2*8)+7;
+volatile bit ACKSTAT @ ((unsigned)&SSPCON2*8)+6;
+volatile bit ACKDT @ ((unsigned)&SSPCON2*8)+5;
+volatile bit ACKEN @ ((unsigned)&SSPCON2*8)+4;
+volatile bit RCEN @ ((unsigned)&SSPCON2*8)+3;
+volatile bit PEN @ ((unsigned)&SSPCON2*8)+2;
+volatile bit RSEN @ ((unsigned)&SSPCON2*8)+1;
+volatile bit SEN @ ((unsigned)&SSPCON2*8)+0;
+
+
+
+volatile bit MSK7 @ ((unsigned)&SSPMSK*8)+7;
+volatile bit MSK6 @ ((unsigned)&SSPMSK*8)+6;
+volatile bit MSK5 @ ((unsigned)&SSPMSK*8)+5;
+volatile bit MSK4 @ ((unsigned)&SSPMSK*8)+4;
+volatile bit MSK3 @ ((unsigned)&SSPMSK*8)+3;
+volatile bit MSK2 @ ((unsigned)&SSPMSK*8)+2;
+volatile bit MSK1 @ ((unsigned)&SSPMSK*8)+1;
+volatile bit MSK0 @ ((unsigned)&SSPMSK*8)+0;
+
+
+
+volatile bit SMP @ ((unsigned)&SSPSTAT*8)+7;
+volatile bit CKE @ ((unsigned)&SSPSTAT*8)+6;
+volatile bit DA @ ((unsigned)&SSPSTAT*8)+5;
+volatile bit P @ ((unsigned)&SSPSTAT*8)+4;
+volatile bit S @ ((unsigned)&SSPSTAT*8)+3;
+volatile bit RW @ ((unsigned)&SSPSTAT*8)+2;
+volatile bit UA @ ((unsigned)&SSPSTAT*8)+1;
+volatile bit BF @ ((unsigned)&SSPSTAT*8)+0;
+
+
+
+volatile bit WPUB6 @ ((unsigned)&WPUB*8)+6;
+volatile bit WPUB5 @ ((unsigned)&WPUB*8)+5;
+volatile bit WPUB4 @ ((unsigned)&WPUB*8)+4;
+volatile bit WPUB3 @ ((unsigned)&WPUB*8)+3;
+volatile bit WPUB2 @ ((unsigned)&WPUB*8)+2;
+volatile bit WPUB1 @ ((unsigned)&WPUB*8)+1;
+volatile bit WPUB0 @ ((unsigned)&WPUB*8)+0;
+
+
+
+volatile bit IOCB6 @ ((unsigned)&IOCB*8)+6;
+volatile bit IOCB5 @ ((unsigned)&IOCB*8)+5;
+volatile bit IOCB4 @ ((unsigned)&IOCB*8)+4;
+volatile bit IOCB3 @ ((unsigned)&IOCB*8)+3;
+volatile bit IOCB2 @ ((unsigned)&IOCB*8)+2;
+volatile bit IOCB1 @ ((unsigned)&IOCB*8)+1;
+volatile bit IOCB0 @ ((unsigned)&IOCB*8)+0;
+
+
+
+volatile bit WPDB6 @ ((unsigned)&WPDB*8)+6;
+volatile bit WPDB5 @ ((unsigned)&WPDB*8)+5;
+volatile bit WPDB4 @ ((unsigned)&WPDB*8)+4;
+volatile bit WPDB3 @ ((unsigned)&WPDB*8)+3;
+volatile bit WPDB2 @ ((unsigned)&WPDB*8)+2;
+volatile bit WPDB1 @ ((unsigned)&WPDB*8)+1;
+volatile bit WPDB0 @ ((unsigned)&WPDB*8)+0;
+
+
+
+volatile bit BRG17 @ ((unsigned)&SPBRG1*8)+7;
+volatile bit BRG16 @ ((unsigned)&SPBRG1*8)+6;
+volatile bit BRG15 @ ((unsigned)&SPBRG1*8)+5;
+volatile bit BRG14 @ ((unsigned)&SPBRG1*8)+4;
+volatile bit BRG13 @ ((unsigned)&SPBRG1*8)+3;
+volatile bit BRG12 @ ((unsigned)&SPBRG1*8)+2;
+volatile bit BRG11 @ ((unsigned)&SPBRG1*8)+1;
+volatile bit BRG10 @ ((unsigned)&SPBRG1*8)+0;
+
+
+
+volatile bit CYC2EN @ ((unsigned)&PWMCON*8)+6;
+volatile bit CK21 @ ((unsigned)&PWMCON*8)+5;
+volatile bit CK20 @ ((unsigned)&PWMCON*8)+4;
+volatile bit CYC1EN @ ((unsigned)&PWMCON*8)+2;
+volatile bit CK11 @ ((unsigned)&PWMCON*8)+1;
+volatile bit CK10 @ ((unsigned)&PWMCON*8)+0;
+
+
+
+volatile bit ADCS1 @ ((unsigned)&ADCON0*8)+7;
+volatile bit ADCS0 @ ((unsigned)&ADCON0*8)+6;
+volatile bit CHS3 @ ((unsigned)&ADCON0*8)+5;
+volatile bit CHS2 @ ((unsigned)&ADCON0*8)+4;
+volatile bit CHS1 @ ((unsigned)&ADCON0*8)+3;
+volatile bit CHS0 @ ((unsigned)&ADCON0*8)+2;
+volatile bit GODONE @ ((unsigned)&ADCON0*8)+1;
+volatile bit ADON @ ((unsigned)&ADCON0*8)+0;
+
+
+
+volatile bit ADFM @ ((unsigned)&ADCON1*8)+7;
+volatile bit CHS4 @ ((unsigned)&ADCON1*8)+6;
+
+
+
+volatile bit SPEN1 @ ((unsigned)&RCSTA1*8)+7;
+volatile bit RX9EN1 @ ((unsigned)&RCSTA1*8)+6;
+volatile bit SREN1 @ ((unsigned)&RCSTA1*8)+5;
+volatile bit CREN1 @ ((unsigned)&RCSTA1*8)+4;
+volatile bit RCIDL1 @ ((unsigned)&RCSTA1*8)+3;
+volatile bit FERR1 @ ((unsigned)&RCSTA1*8)+2;
+volatile bit OERR1 @ ((unsigned)&RCSTA1*8)+1;
+volatile bit RX9D1 @ ((unsigned)&RCSTA1*8)+0;
+
+
+
+volatile bit WPUA7 @ ((unsigned)&WPUA*8)+7;
+volatile bit WPUA6 @ ((unsigned)&WPUA*8)+6;
+volatile bit WPUA5 @ ((unsigned)&WPUA*8)+5;
+volatile bit WPUA4 @ ((unsigned)&WPUA*8)+4;
+volatile bit WPUA3 @ ((unsigned)&WPUA*8)+3;
+volatile bit WPUA2 @ ((unsigned)&WPUA*8)+2;
+volatile bit WPUA1 @ ((unsigned)&WPUA*8)+1;
+volatile bit WPUA0 @ ((unsigned)&WPUA*8)+0;
+
+
+
+volatile bit WPUC7 @ ((unsigned)&WPUC*8)+7;
+volatile bit WPUC6 @ ((unsigned)&WPUC*8)+6;
+volatile bit WPUC5 @ ((unsigned)&WPUC*8)+5;
+volatile bit WPUC4 @ ((unsigned)&WPUC*8)+4;
+volatile bit WPUC3 @ ((unsigned)&WPUC*8)+3;
+volatile bit WPUC2 @ ((unsigned)&WPUC*8)+2;
+volatile bit WPUC1 @ ((unsigned)&WPUC*8)+1;
+volatile bit WPUC0 @ ((unsigned)&WPUC*8)+0;
+
+
+
+volatile bit EEDAT7 @ ((unsigned)&EEDAT*8)+7;
+volatile bit EEDAT6 @ ((unsigned)&EEDAT*8)+6;
+volatile bit EEDAT5 @ ((unsigned)&EEDAT*8)+5;
+volatile bit EEDAT4 @ ((unsigned)&EEDAT*8)+4;
+volatile bit EEDAT3 @ ((unsigned)&EEDAT*8)+3;
+volatile bit EEDAT2 @ ((unsigned)&EEDAT*8)+2;
+volatile bit EEDAT1 @ ((unsigned)&EEDAT*8)+1;
+volatile bit EEDAT0 @ ((unsigned)&EEDAT*8)+0;
+
+
+
+volatile bit EEADR7 @ ((unsigned)&EEADR*8)+7;
+volatile bit EEADR6 @ ((unsigned)&EEADR*8)+6;
+volatile bit EEADR5 @ ((unsigned)&EEADR*8)+5;
+volatile bit EEADR4 @ ((unsigned)&EEADR*8)+4;
+volatile bit EEADR3 @ ((unsigned)&EEADR*8)+3;
+volatile bit EEADR2 @ ((unsigned)&EEADR*8)+2;
+volatile bit EEADR1 @ ((unsigned)&EEADR*8)+1;
+volatile bit EEADR0 @ ((unsigned)&EEADR*8)+0;
+
+
+
+volatile bit EEDATH7 @ ((unsigned)&EEDATH*8)+7;
+volatile bit EEDATH6 @ ((unsigned)&EEDATH*8)+6;
+volatile bit EEDATH5 @ ((unsigned)&EEDATH*8)+5;
+volatile bit EEDATH4 @ ((unsigned)&EEDATH*8)+4;
+volatile bit EEDATH3 @ ((unsigned)&EEDATH*8)+3;
+volatile bit EEDATH2 @ ((unsigned)&EEDATH*8)+2;
+volatile bit EEDATH1 @ ((unsigned)&EEDATH*8)+1;
+volatile bit EEDATH0 @ ((unsigned)&EEDATH*8)+0;
+
+
+
+volatile bit EEADRH4 @ ((unsigned)&EEADRH*8)+4;
+volatile bit EEADRH3 @ ((unsigned)&EEADRH*8)+3;
+volatile bit EEADRH2 @ ((unsigned)&EEADRH*8)+2;
+volatile bit EEADRH1 @ ((unsigned)&EEADRH*8)+1;
+volatile bit EEADRH0 @ ((unsigned)&EEADRH*8)+0;
+
+
+
+volatile bit LCDEN @ ((unsigned)&LEDCON0*8)+7;
+volatile bit LEDEN @ ((unsigned)&LEDCON0*8)+6;
+volatile bit COMSEL1 @ ((unsigned)&LEDCON0*8)+5;
+volatile bit COMSEL0 @ ((unsigned)&LEDCON0*8)+4;
+volatile bit LCDCLK3 @ ((unsigned)&LEDCON0*8)+3;
+volatile bit LCDCLK2 @ ((unsigned)&LEDCON0*8)+2;
+volatile bit LCDCLK1 @ ((unsigned)&LEDCON0*8)+1;
+volatile bit LCDCLK0 @ ((unsigned)&LEDCON0*8)+0;
+volatile bit LEDCLK3 @ ((unsigned)&LEDCON0*8)+3;
+volatile bit LEDCLK2 @ ((unsigned)&LEDCON0*8)+2;
+volatile bit LEDCLK1 @ ((unsigned)&LEDCON0*8)+1;
+volatile bit LEDCLK0 @ ((unsigned)&LEDCON0*8)+0;
+
+
+volatile bit LCDF @ ((unsigned)&LEDCON1*8)+6;
+volatile bit LEDF @ ((unsigned)&LEDCON1*8)+6;
+volatile bit SEGOUT1 @ ((unsigned)&LEDCON1*8)+5;
+volatile bit SEGOUT0 @ ((unsigned)&LEDCON1*8)+4;
+
+
+
+volatile bit LEDCS @ ((unsigned)&LEDADD*8)+7;
+volatile bit COMSEL2 @ ((unsigned)&LEDADD*8)+5;
+volatile bit LCDADD4 @ ((unsigned)&LEDADD*8)+4;
+volatile bit LCDADD3 @ ((unsigned)&LEDADD*8)+3;
+volatile bit LCDADD2 @ ((unsigned)&LEDADD*8)+2;
+volatile bit LCDADD1 @ ((unsigned)&LEDADD*8)+1;
+volatile bit LCDADD0 @ ((unsigned)&LEDADD*8)+0;
+volatile bit LEDADD4 @ ((unsigned)&LEDADD*8)+4;
+volatile bit LEDADD3 @ ((unsigned)&LEDADD*8)+3;
+volatile bit LEDADD2 @ ((unsigned)&LEDADD*8)+2;
+volatile bit LEDADD1 @ ((unsigned)&LEDADD*8)+1;
+volatile bit LEDADD0 @ ((unsigned)&LEDADD*8)+0;
+
+
+volatile bit EEPGD @ ((unsigned)&EECON1*8)+7;
+volatile bit WRERR @ ((unsigned)&EECON1*8)+3;
+volatile bit WREN @ ((unsigned)&EECON1*8)+2;
+volatile bit WR @ ((unsigned)&EECON1*8)+1;
+volatile bit RD @ ((unsigned)&EECON1*8)+0;
+
+
+
+volatile bit CSRC1 @ ((unsigned)&TXSTA1*8)+7;
+volatile bit TX9EN1 @ ((unsigned)&TXSTA1*8)+6;
+volatile bit TXEN1 @ ((unsigned)&TXSTA1*8)+5;
+volatile bit SYNC1 @ ((unsigned)&TXSTA1*8)+4;
+volatile bit SCKP1 @ ((unsigned)&TXSTA1*8)+3;
+volatile bit TRMT1 @ ((unsigned)&TXSTA1*8)+1;
+volatile bit TX9D1 @ ((unsigned)&TXSTA1*8)+0;
+
+
+
+volatile bit LVD_RES @ ((unsigned)&LVDCON*8)+7;
+volatile bit LVD_SEL2 @ ((unsigned)&LVDCON*8)+3;
+volatile bit LVD_SEL1 @ ((unsigned)&LVDCON*8)+2;
+volatile bit LVD_SEL0 @ ((unsigned)&LVDCON*8)+1;
+volatile bit LVDEN @ ((unsigned)&LVDCON*8)+0;
+
+
+
+volatile bit DIVEN @ ((unsigned)&DIVCON*8)+7;
+volatile bit CAL_END @ ((unsigned)&DIVCON*8)+6;
+volatile bit DIV_CLK @ ((unsigned)&DIVCON*8)+0;
+
+
+# 27 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\cms.h"
+#pragma intrinsic(__nop)
+extern void __nop(void);
+
+# 76
+extern unsigned int flash_read(unsigned short addr);
+
+
+# 149
+#pragma intrinsic(_delay)
+extern __nonreentrant void _delay(unsigned long);
+
+# 184
+extern unsigned char __resetbits;
+extern __bit __powerdown;
+extern __bit __timeout;
+
+# 4 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\__size_t.h"
+typedef unsigned size_t;
+
+# 14 "C:\Users\qxl\Desktop\组会信息\高师兄给的资料\CMS_IDE_V2.03.28\CMS_IDE_V2.03.28\data\include\string.h"
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+
+# 34
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+
+# 8 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\delay.h"
+void Delay(unsigned int dtemp);
+void Delay_nms (unsigned int inittempl);
+
+
+# 11 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\Touch_Kscan_Library.h"
+#pragma warning disable 752,759
+
+
+
+extern void __CMS_CheckTouchKey(void);
+extern void __CMS_GetTouchKeyValue(void);
+extern volatile bit _CMS_b_kerr;
+
+# 23
+extern volatile unsigned char _CMS_KeyFlag[3];
+
+# 29
+const unsigned char _CMS_Table_KeyChannel[] = {
+0x03,
+0x04,
+
+};
+
+
+
+const unsigned int _CMS_Table_KeyDown[] = {
+200,
+200,
+};
+
+# 93
+const unsigned char _CMS_KeyTNumber = 2;
+const unsigned char _CMS_KeyShakeC = 3;
+const unsigned char _CMS_KeyOffC = 3;
+const unsigned char _CMS_VolValue = 70;
+const unsigned char _CMS_SluValue = 15;
+const unsigned char _CMS_CmBase = 13;
+const unsigned char _CMS_KeyValidC = 1;
+const unsigned int _CMS_KeyValidT = (1000/4)*20;
+
+const unsigned char _CMS_UnNolCheck = 1;
+const unsigned char _CMS_UnNolTimes = 100;
+const unsigned char _CMS_LMDValue = 1;
+const unsigned char _CMS_KeyLDOSel = 4;
+const unsigned char _CMS_KeyEn1kres = 0;
+
+unsigned int _CMS_DispKeyDown[2];
+unsigned int _CMS_NoiseDat[2];
+unsigned int _CMS_FactorRawDat[2];
+
+# 9 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\CommHead.h"
+typedef union
+{
+unsigned char all;
+struct
+{
+unsigned b0:1;
+unsigned b1:1;
+unsigned b2:1;
+unsigned b3:1;
+unsigned b4:1;
+unsigned b5:1;
+unsigned b6:1;
+unsigned b7:1;
+}one;
+}bits;
+
+# 32
+void vInitDecoding(void);
+void vClearDecodingParam(void);
+void vDecodeInTimer();
+
+volatile unsigned char g_cReceiveData[4];
+bit GetDecodeCode(void);
+
+# 51
+volatile unsigned char g_cDecodePinHcnt = 0;
+volatile unsigned char g_cDecodePinLcnt = 0;
+volatile bit g_bPrevPinValue = 0;
+volatile bit g_bCurrPinValue = 0;
+volatile bit g_bBitVal0Decoding = 0;
+volatile bit g_bBitVal1Decoding = 0;
+
+
+volatile bit g_bDecodBody = 0;
+volatile unsigned char g_cDecodedPosition = 0;
+volatile unsigned char g_cDecodeData[4];
+volatile bit g_bDecodeSuccess = 0;
+
+
+
+volatile unsigned char SendFifo[4];
+volatile unsigned long g_lSendData = 0;
+volatile bit g_bIsAllowedCopyData;
+volatile bit g_bIsAllowedGetData;
+volatile bit g_bSendCmdHead;
+volatile bit g_bSendCmdBody;
+volatile unsigned char g_cSendCommNo = 0;
+
+void vTxDataReady(void);
+void vIntimeCopyData(void);
+void vIntSendData(void);
+
+
+
+volatile bits Work_Flag1;
+
+# 90
+volatile bits Work_Flag2;
+
+
+
+
+volatile unsigned char PowerWork;
+
+volatile unsigned char Num_LxLowOn;
+volatile unsigned char Num_LxLowOff;
+
+# 106
+volatile bits Status1_Work;
+volatile bits Status2_Work;
+
+# 124
+volatile bits Flag1_Error;
+volatile bits Flag2_Error;
+
+# 142
+volatile unsigned char Status_PPGStop;
+volatile bit B_L1_OVER_VOL;
+volatile bit B_VOL_SURGE;
+volatile bit B_CUR_SURGE;
+volatile bit B_L2_OVER_VOL;
+volatile bit B_CONDUCTION_STEP_H;
+volatile bit B_PPG_WTDOG_OVER;
+
+# 155
+volatile unsigned char AD_TmprPan ;
+volatile unsigned char AD_TmprIgbt ;
+
+# 4 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\StateMachine.h"
+typedef enum
+{
+POWER_OFF=0,
+SLEEPING=1,
+WAITING=2,
+HEATING=3,
+SETTING1=4,
+SETTING2=5,
+
+}E_SYSEM_STAT;
+volatile E_SYSEM_STAT g_eSysStatus = POWER_OFF;
+
+
+
+volatile unsigned char g_cLedAllOnCount = 150;
+
+
+typedef enum
+{
+ActIdle,
+
+
+StartKey,
+SetKey,
+IncSKey,
+DecSKey,
+
+
+OkKey,
+OkLKey,
+
+Tim05STrig,
+Tim1STrig,
+
+
+
+
+Tim3MinNoOpr,
+Tim5STrig,
+
+
+LiftKettle,
+PBackKettle,
+
+StartHeat,
+KeepWarm,
+HeatDone,
+ErrHappen,
+
+
+Tim5SNoOpr,
+Tim1MNoOpr,
+
+}ACTION_Typedef;
+
+volatile ACTION_Typedef g_xSysAction;
+
+
+typedef struct
+{
+ACTION_Typedef buf[12];
+unsigned char front;
+unsigned char rear;
+} Queue_t;
+
+volatile Queue_t g_xActQueue={{0,0,0,0,0,0,0,0,0,0,0,0},0,0};
+
+# 73
+bit bQueueEn(ACTION_Typedef val);
+
+# 78
+bit bQueueDe(ACTION_Typedef *pVal);
+
+
+volatile unsigned char g_cSwch2SleepTime;
+
+
+volatile bit g_bKettleLift;
+volatile unsigned char g_cLiftKettleTime;
+volatile bit g_bKeepWarmFlag;
+volatile unsigned char g_cKeepWarmTime;
+
+
+volatile unsigned char g_cSt1NoOprTimer;
+
+
+volatile unsigned char g_cSt2NoOprTimer;
+
+
+
+void vTemprIncrease(void);
+void vTemprDecrease(void);
+
+
+
+void vUpdateTargetTempr(void);
+
+
+
+
+void vCurTemprUpdate(void);
+
+
+void vPowerOffStatus(void);
+void vSleepStatus(void);
+void vWaittingStatus(void);
+void vHeatingStatus(void);
+void vSetting1Status(void);
+void vSetting2Status(void);
+
+void vSystemStatus(void);
+
+
+void vSysParam2Tft(unsigned char item);
+
+# 18 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\UIProc.h"
+typedef struct
+{
+
+unsigned char Sleep:2;
+
+unsigned char OldBtOnOff:1;
+unsigned char BtOnOff:1;
+unsigned char KWOnOff:1;
+unsigned char DogDorH:1;
+
+unsigned char sEnFlash:1;
+
+unsigned char sSetDorH:1;
+unsigned char sItem:3;
+unsigned char sVal:2;
+
+unsigned char OldBall:4;
+unsigned char Ball:4;
+unsigned char setT;
+unsigned char curT;
+}TFT_Content_TypeDef;
+
+
+volatile TFT_Content_TypeDef g_xTftContent = {0,1,1,1,1,0,0,0,0,0,0,188,50};
+
+volatile unsigned char g_cGapTempr;
+
+# 82
+const unsigned char C_cSwitchTftPage[]={0xEE, 0x05, 0x00, 0x03, 0x00, 0x00, 0xFF, 0xFC, 0xFF, 0xFF};
+
+# 94
+const unsigned char C_cSwitchImageIcon[]={0xEE, 0x81, 0x09, 0x00, 0x01, 0x00, 0x3D, 0xFF, 0xFC, 0xFF, 0xFF};
+
+
+
+const unsigned char C_cHideDisplayID[]={0xEE, 0x81, 0x0A, 0x00, 0x03, 0x00, 0x00, 0x00, 0x01, 0xFF, 0xFC, 0xFF, 0xFF};
+
+
+volatile unsigned char g_cTftCommand[14];
+
+
+void vUart0Send(unsigned char len);
+
+
+void vSwitchTftPage(unsigned char pageNum);
+
+
+void vSwitchImageIcon(unsigned char id, unsigned char icon);
+
+
+void vHideDisplayID(unsigned char id, unsigned char hd);
+
+
+typedef enum
+{
+UPDIdle,
+
+SwchPage,
+
+UpdSetTempr,
+UpdCurTempr,
+UpdBtIcon,
+UpdKeepWarmIcon,
+UpdUnitIcon,
+UpdDogIcon,
+
+UpdSleepIcon,
+
+SelSetItem,
+
+UpdSetVal,
+
+}UPD_ACTION_Typedef;
+
+volatile UPD_ACTION_Typedef g_xTftAction;
+
+
+void UpdateTftDisplay(void);
+
+# 158
+volatile bit KnobA,KnobB;
+
+
+
+void Knob_Scan(void);
+
+
+void vEnablePWM(void);
+
+
+
+volatile bit g_bRedLedBreath;
+volatile bit g_bWhiteLedBreath;
+volatile bit g_bDarkLight;
+volatile unsigned char g_cRedLEDLight=205;
+volatile unsigned char g_cWhiteLEDLight=50;
+void vSetPWM1(unsigned char pVal);
+void vSetPWM2(unsigned char pVal);
+
+
+void vLedBreath(void);
+
+# 7 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\IHProc.h"
+typedef enum
+{
+E_NONE,
+E_VOL_LOW,
+E_VOL_HIGH,
+E_NTC_MOS,
+E_NTC_TOP_OPEN,
+E_NTC_TOP_SHORT,
+E_NO_CIRCLE,
+E_NO_POT,
+E_LUMIAN_OVERTEMPR,
+E_MOS_OVERTEMPR,
+}IHERR_Typedef;
+volatile IHERR_Typedef g_cErrStatus = E_NONE;
+
+
+
+typedef enum
+{
+POW_0W=0,
+POW_100W=77,
+POW_200W=78,
+POW_300W=79,
+POW_400W=80,
+POW_500W=100,
+POW_600W=120,
+POW_700W=140,
+POW_800W=160
+}POWVAL_EnumDef;
+void vSetIHPower(POWVAL_EnumDef pow);
+
+
+void vSetBuzzer(unsigned char bShortLong);
+
+
+void RecvDataAnalysis(void);
+
+# 12 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\PotProc.h"
+unsigned char CConvert2F(unsigned char tempC);
+unsigned char FConvert2C(unsigned char tempF);
+
+
+
+
+void vGaoyuanBoilingProc(void);
+
+
+void vHeatingProc(void);
+
+# 30
+volatile bit g_bUart1SendFlag;
+const unsigned char c_cUart1SendBuf[]={0xAA,0x01,0xFE,0x00};
+
+void vUart1Send(void);
+void vUart1Recv(void);
+
+
+void vBtConnectProc(void);
+
+
+
+
+volatile unsigned char g_cUart1RecvBuff[16];
+
+volatile bit g_bBtConectSuccessFlg;
+volatile unsigned char g_cBtConectSuccessTime;
+
+# 18 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\main.h"
+typedef struct
+{
+unsigned char BoilingPoint;
+unsigned char SetTempr;
+
+
+unsigned char KWTime;
+unsigned char TemprUnit:1;
+unsigned char EnBeep:1;
+unsigned char EnGaoyuan:1;
+unsigned char PreBoiling:1;
+
+}SYS_PARAM_Typedef;
+
+# 36
+volatile SYS_PARAM_Typedef g_xSysSetting = {200, 184, 0, 0, 0, 0, 0};
+
+# 46
+bit Memory_Write(unsigned char Addr, unsigned char Value);
+unsigned char Memory_Read(unsigned char Addr);
+
+# 56
+typedef enum
+{
+ADDR_KEEP_WARM_TIME = 11,
+ADDR_KEEP_WARM_TIME1,
+
+ADDR_PRE_BOILING = 13,
+ADDR_PRE_BOILING1,
+
+ADDR_TEMPR_UNIT = 15,
+ADDR_TEMPR_UNIT1,
+
+ADDR_SOUND_ONOFF = 17,
+ADDR_SOUND_ONOFF1,
+
+ADDR_GAOYUAN_ONOFF = 19,
+ADDR_GAOYUAN_ONOFF1,
+
+ADDR_TEMPR_BOILING = 21,
+ADDR_TEMPR_BOILING1,
+}SYSPARAM_ADDR_EnumDef;
+
+void vReadSysCfg(void);
+
+
+
+typedef struct
+{
+unsigned char CurTempr;
+unsigned char TargTempr;
+
+
+unsigned char GapTempr;
+unsigned char PrevTempr;
+}IH_PROC_Typedef;
+
+volatile IH_PROC_Typedef g_xIhProcParam;
+
+# 105
+volatile unsigned char g_cDisableKeyTime;
+volatile unsigned char g_cLongPressCounter;
+volatile bit g_bKeyShortPressed;
+
+volatile bit g_bStartKeyPressed;
+volatile bit g_bSetKeyPressed;
+
+
+volatile bit g_bOkKeyPressed;
+volatile bit g_bOkKeyLPressed;
+volatile unsigned char g_cOkKeyCounter;
+
+# 124
+typedef struct
+{
+unsigned char t20ms : 4;
+unsigned char t100ms : 4;
+unsigned char t500ms : 4;
+unsigned char t1S : 4;
+unsigned char t5S : 4;
+unsigned char t1Min : 4;
+}LOOP_TIME_Typedef;
+volatile LOOP_TIME_Typedef g_xLoopTime;
+volatile unsigned char g_cT4msCounter=0;
+
+# 3 "C:\Users\qxl\Desktop\公司日常\dcl git\dcl\KeyBoard\IHProc.c"
+void vSetBuzzer(unsigned char bShortLong)
+{
+if(!g_xSysSetting.EnBeep) return;
+
+g_cSendCommNo = 0;
+if(bShortLong)
+{
+Work_Flag1.one.b4 = 1;
+}
+else
+{
+Work_Flag1.one.b3 = 1;
+}
+}
+
+
+
+void vSetIHPower(POWVAL_EnumDef pow)
+{
+
+# 34
+if(pow == POW_0W)
+{
+Work_Flag1.one.b0 = 0;
+PowerWork = pow;
+Work_Flag1.one.b1 = 1;
+}
+else
+{
+
+# 75
+Work_Flag1.one.b1 = 1;
+PowerWork = pow;
+Work_Flag1.one.b0 = 1;
+
+# 98
+}
+}
+
+void vTemprProc(void)
+{
+static unsigned char s_cOverTempr1Count=0;
+static unsigned char s_cOverTempr2Count=0;
+
+if(218 < AD_TmprPan)
+{
+s_cOverTempr1Count++;
+if(10 < s_cOverTempr1Count)
+{
+s_cOverTempr1Count = 10;
+vSetIHPower(POW_0W);
+
+if(g_cErrStatus == E_NONE)
+g_cErrStatus = E_LUMIAN_OVERTEMPR;
+}
+}
+else
+{
+s_cOverTempr1Count = 0;
+
+if((g_cErrStatus == E_LUMIAN_OVERTEMPR) && (AD_TmprPan < 147))
+g_cErrStatus = E_NONE;
+}
+
+
+if(205 < AD_TmprIgbt)
+{
+s_cOverTempr2Count++;
+if(10 < s_cOverTempr2Count)
+{
+s_cOverTempr2Count = 10;
+vSetIHPower(POW_0W);
+
+if(g_cErrStatus == E_NONE)
+g_cErrStatus = E_MOS_OVERTEMPR;
+}
+}
+else
+{
+s_cOverTempr2Count = 0;
+
+if((g_cErrStatus == E_MOS_OVERTEMPR)&&(AD_TmprIgbt < 192))
+g_cErrStatus = E_NONE;
+}
+}
+
+void vErrorProc(void)
+{
+static unsigned char s_cIgbtErrCount=0;
+static unsigned char s_cPanErrCount=0;
+
+if(Flag1_Error.one.b0 ){
+g_cErrStatus = E_VOL_LOW;
+vSetIHPower(POW_0W);
+}
+if(Flag1_Error.one.b1 ){
+g_cErrStatus = E_VOL_HIGH;
+vSetIHPower(POW_0W);
+}
+if(Flag1_Error.one.b2 || Flag1_Error.one.b3){
+s_cIgbtErrCount++;
+if(10<s_cIgbtErrCount)
+{
+s_cIgbtErrCount = 10;
+g_cErrStatus = E_NTC_MOS;
+vSetIHPower(POW_0W);
+}
+}
+else
+s_cIgbtErrCount = 0;
+
+if(Flag1_Error.one.b5)
+{
+s_cPanErrCount++;
+if(10<s_cPanErrCount)
+{
+s_cPanErrCount = 10;
+g_cErrStatus = E_NTC_TOP_OPEN;
+vSetIHPower(POW_0W);
+}
+}
+else if(Flag1_Error.one.b6)
+{
+s_cPanErrCount++;
+if(10<s_cPanErrCount)
+{
+s_cPanErrCount = 10;
+g_cErrStatus = E_NTC_TOP_SHORT;
+vSetIHPower(POW_0W);
+}
+}
+else
+s_cPanErrCount = 0;
+}
+
+
+void RecvDataAnalysis(void)
+{
+
+if (GetDecodeCode())
+{
+unsigned char sum = 0;
+for (unsigned int i = 0; i < 4; i++)
+{
+sum += g_cReceiveData[i];
+}
+
+if (sum != 0xFF) return;
+
+switch (g_cReceiveData[3])
+{
+case 0xA0:
+Status1_Work.all = g_cReceiveData[2];
+Status2_Work.all = g_cReceiveData[1];
+
+# 230
+if(Status1_Work.one.b1 && !Status1_Work.one.b2)
+{
+if(!g_bKettleLift)
+bQueueEn(LiftKettle);
+g_bKettleLift = 1;
+}
+else if(!Status1_Work.one.b1 && Status1_Work.one.b2)
+{
+if(g_bKettleLift)
+bQueueEn(PBackKettle);
+g_bKettleLift = 0;
+}
+
+# 249
+break;
+case 0xA1:
+Flag1_Error.all = g_cReceiveData[2];
+Flag2_Error.all = g_cReceiveData[1];
+vErrorProc();
+
+# 271
+break;
+case 0xA2:
+Status_PPGStop = g_cReceiveData[2];
+
+# 284
+break;
+
+# 290
+case 0xA4:
+AD_TmprPan = g_cReceiveData[2];
+AD_TmprIgbt = g_cReceiveData[1];
+vTemprProc();
+break;
+
+# 333
+default:
+break;
+}
+}
+}
